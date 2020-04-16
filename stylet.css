@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url('./background.png') no-repeat;
+	background-size: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-repeat: repeat-y;
+}
+
+.icon {
+    width: 16px;
+    height: 10px;
+}
+
+@media (min-width: 1024px) {
+	.container {
+		border-bottom: 35px solid black;
+	}
+
+	.image {
+		width: 60%;
+		top: 50px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		border-bottom: 25px solid black;
+	}
+
+	.image {
+		width: 70%;
+		top: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		border-bottom: 15px solid black;
+	}
+
+	.image {
+		width: 80%;
+		top: 30px;
+	}
+}
+
+.container {
+	position: relative;
+	margin: 0px;
+	width: 100%;
+}
+
+.image {
+	position: relative;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.buttons-container {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.button {
+		font-size: 20px;
+		margin-top: 38px;
+		width: 12%;
+		margin-left: 2%;
+		padding: 8px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 23%;
+	}
+
+	.last-button {
+		margin-right: 23%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.button {
+		font-size: 18px;
+		margin-top: 30px;
+		width: 16%;
+		margin-left: 2%;
+		padding: 6px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 15%;
+	}
+
+	.last-button {
+		margin-right: 15%;
+	}
+}
+
+@media (max-width: 767px) {
+	.button {
+		font-size: 16px;
+		margin-top: 26px;
+		width: 20%;
+		margin-left: 2%;
+		padding: 5px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 7%;
+	}
+
+	.last-button {
+		margin-right: 7%;
+	}
+}
+
+.button {
+	color: black;
+	position: relative;
+	float: left;
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.refs {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+}
+
+.button:hover, .button:active {
+	background-color: #dbdbdb;
+	color: black;
+}
+
+.general-info-title {
+	text-align: center;
+	margin: 0px;
+	margin-top: 130px;
+	font-weight: 700;
+	font-size: 26px;
+	padding: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.general-info-title-joint {
+	position: relative;
+	width: 100%;
+
+	color: #404040;
+	font-weight: 600;
+	font-size: 24px;
+	font-style: oblique;
+	font-family: serif;
+
+	border-top: 4px double #404040;
+	border-bottom: 4px double #404040;
+}
+
+.general-info-title-1 {
+	padding-left: 30%;
+}
+
+.general-info-title-2 {
+	padding-left: 60%;
+}
+
+.general-info-title-3 {
+	text-align: center;
+}
+
+.general-info-1 {
+	position: relative;
+	margin: 8%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	text-align: justify;
+	font-size: 18px;
+	font-family: serif;
+	font-style: oblique;
+	color: #383838;
+}
+
+.general-info-2 {
+	position: relative;
+	margin: 8%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	text-align: justify;
+	font-size: 18px;
+	font-family: serif;
+	font-style: oblique;
+	color: #383838;
+}
+
+.general-info-3 {
+	position: relative;
+	margin: 8%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	text-align: justify;
+	font-size: 18px;
+	font-family: serif;
+	font-style: oblique;
+	color: #383838;
+}
+     /************MEDIA**********/
+
+@media (min-width: 870px) {
+	.crane-img {
+		position: absolute;
+		border: 4px double black;
+		margin-top: 0px;
+		margin-left: 70%;
+		margin-bottom: 0px;
+		padding: 0px;
+		width: 25%;
+		top: 400px;
+	}
+
+	.crane-description {
+		position: relative;
+		margin-top: 130px;
+		width: 60%;
+		margin-left: 6%;
+		margin-bottom: 200px;
+		font-weight: 600;
+		text-align: right;
+		font-size: 20px;
+		font-family: serif;
+		font-style: oblique;
+		color: #383838;
+	}	
+}
+
+@media (max-width: 869px) {
+	.crane-img {
+		position: relative;
+		border: 4px double black;
+		margin-top: 0px;
+		margin-left: 20%;
+		margin-bottom: 30px;
+		padding: 0px;
+		width: 60%;
+		top: 0px;
+	}
+
+	.crane-description {
+		position: relative;
+		margin-top: 40px;
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 20px;
+		font-weight: 600;
+		text-align: center;
+		font-size: 20px;
+		font-family: serif;
+		font-style: oblique;
+		color: #383838;
+	}
+}
+
+footer {
+	margin-top: 20px;
+	width: 100%;
+	border-bottom: 100px solid black;
+}

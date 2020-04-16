@@ -1,0 +1,330 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url('./background.png') no-repeat;
+	background-size: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-repeat: repeat-y;
+}
+
+.icon {
+    width: 16px;
+    height: 10px;
+}
+
+@media (min-width: 1024px) {
+	.container {
+		border-bottom: 35px solid black;
+	}
+
+	.image {
+		width: 60%;
+		top: 50px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		border-bottom: 25px solid black;
+	}
+
+	.image {
+		width: 70%;
+		top: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		border-bottom: 15px solid black;
+	}
+
+	.image {
+		width: 80%;
+		top: 30px;
+	}
+}
+
+.container {
+	position: relative;
+	margin: 0px;
+	width: 100%;
+}
+
+.image {
+	position: relative;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.buttons-container {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.button {
+		font-size: 20px;
+		margin-top: 38px;
+		width: 12%;
+		margin-left: 2%;
+		padding: 8px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 23%;
+	}
+
+	.last-button {
+		margin-right: 23%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.button {
+		font-size: 18px;
+		margin-top: 30px;
+		width: 16%;
+		margin-left: 2%;
+		padding: 6px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 15%;
+	}
+
+	.last-button {
+		margin-right: 15%;
+	}
+}
+
+@media (max-width: 767px) {
+	.button {
+		font-size: 16px;
+		margin-top: 26px;
+		width: 20%;
+		margin-left: 2%;
+		padding: 5px;
+		font-weight: 600;
+	}
+
+	.first-button {
+		margin-left: 7%;
+	}
+
+	.last-button {
+		margin-right: 7%;
+	}
+}
+
+.button {
+	color: black;
+	position: relative;
+	float: left;
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.refs {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+}
+
+.button:hover, .button:active {
+	background-color: #dbdbdb;
+	color: black;
+}
+
+.general-info-title {
+	position: relative;
+	text-align: center;
+	margin-top: 120px;
+	font-weight: 700;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-right: : 20px;
+}
+
+.col-inf {
+	position: relative;
+	border-bottom: 40px;
+}
+
+.general-info {
+	float: left;
+	position: relative;
+	width: 41%;
+	margin-left: 6%;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	padding: 15px;
+	padding-bottom: 5px;
+
+	border: 4px double #999797;
+	border-color: #999797;
+
+	font-family: cursive;
+	font-style: oblique;
+	color: #616161;
+
+	text-align: justify;
+}
+
+@media (max-width: 580px) {
+	.general-info {
+		font-size: 10px;
+		height: 360px;
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: 581px) and (max-width: 650px) {
+	.general-info {
+		font-size: 11px;
+		height: 330px;
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 767px) {
+	.general-info {
+		font-size: 11px;
+		height: 300px;
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.general-info {
+		font-size: 14px;
+		height: 360px;
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1240px) {
+	.general-info {
+		font-size: 14px;
+		height: 285px;
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: 1240px) {
+	.general-info {
+		font-size: 14px;
+		height: 230px;
+		overflow-y: auto;
+	}
+}
+
+.drawing-block {
+	position: relative;
+	width: 100%;
+}
+
+.drawing-description {
+	color: black;
+	font-family: serif;
+	font-style: oblique;
+}
+
+.drawing-img {
+	position: absolute;
+	border: 12px double #000000;
+	padding: 0px;
+}
+
+@media (min-width: 1024px) {
+	.drawing-img {
+		float: left;
+		width: 320px;
+		top: -250px;
+		left: 58%;
+	}
+
+	.drawing-description {
+		position: relative;
+		text-align: right;
+		font-size: 20px;
+		font-weight: 600;
+		width: 40%;
+		margin-left: 8%;
+		margin-right: 0%;
+		top: 80px;
+	}	
+
+	footer {
+		position: relative;
+		width: 100%;
+		top: 200px;
+		border-bottom: 80px solid #000000;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.drawing-img {
+		width: 35%;
+		left: 33%;
+		top: -30px;
+	}
+
+	.drawing-description {
+		text-align: center;
+		border-width: 90%;
+		position: relative;
+		font-size: 20px;
+		font-weight: 600;
+		width: 80%;
+		margin-left: 10%;
+		top: -40px;
+	}	
+
+	footer {
+		position: relative;
+		width: 100%;
+		top: 420px;
+		border-bottom: 80px solid #000000;
+	}
+}
+
+@media (max-width: 767px) {
+	.drawing-img {
+		width: 60%;
+		left: 20%;
+		top: -30px;
+	}
+
+	.drawing-description {
+		text-align: center;
+		border-width: 90%;
+		position: relative;
+		font-size: 16px;
+		font-weight: 600;
+		width: 80%;
+		margin-left: 10%;
+		top: -40px;
+	}	
+
+	footer {
+		position: relative;
+		width: 100%;
+		top: 600px;
+		border-bottom: 80px solid #000000;
+	}
+}
